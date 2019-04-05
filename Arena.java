@@ -18,20 +18,20 @@ public class Arena extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         
-        Ball = new Ball();
-        addObject(Ball, 100, 150);
+        Ball b= new Ball();
+        addObject(b, 100, 150);
         
-        Korb = new Korb();
-        addObject(Korb, 600, 300);
+        Korb k= new Korb();
+        addObject(k, 600, 300);
         
-        Spieler = new Spieler();
-        addObject(Spieler, 100, 100);
+        Spieler s= new Spieler();
+        addObject(s, 100, 100);
         
-        Richtungsanzeige = new Richtungsanzeige();
-        addObject(Richtungsanzeige, 400, 25);
+        Richtungsanzeige r= new Richtungsanzeige();
+        addObject(r, 400, 25);
         
-        Kraftanzeige = new Kraftanzeige();
-        addObject(Kraftanzeige, 550, 25);
+        Kraftanzeige kr= new Kraftanzeige();
+        addObject(kr, 550, 25);
     }
     public void loescheObjekte()
     {
@@ -40,3 +40,4 @@ public class Arena extends World
         setBackground("Bild");
     }
 }
+
