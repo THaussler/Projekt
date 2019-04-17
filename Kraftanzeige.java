@@ -22,6 +22,7 @@ public class Kraftanzeige extends Actor
         if(Greenfoot.isKeyDown("b"))
         {
             i++;
+            gibKraft();
         }
        
     } 
@@ -121,5 +122,95 @@ public class Kraftanzeige extends Actor
          
     
  
+    }
+    
+    public int gibKraft()
+    {
+        int x = getX();
+        int r = 0;
+       
+       
+       
+       
+
+    
+        if(x == 520)
+        {
+            r=1;
+      
+        }
+        
+        if(x == 525)
+        {
+            r=2;
+
+        }
+       
+        if(x == 530)
+        {
+            r=3;
+         
+        }
+       
+        if(x == 535)
+        {
+            r=4;
+         
+        }
+       
+        if(x == 540)
+        {
+            r=5;
+         
+        }
+        
+        if(x == 545)
+        {
+            r=6;
+           
+        }
+        if(x == 550)
+        {
+            r=7;
+          
+        }
+        
+        if(x == 555)
+        {
+            r=8;
+           
+        }
+        
+        if(x == 560)
+        {
+            r=9;
+          
+        }
+        
+        if(x == 565)
+        {
+            r=10;
+       
+        }
+        
+        if(x == 570)
+        {
+            r=11;
+         
+        }
+        
+        if(x == 575)
+        {
+            r=12;
+            
+        }
+       
+        if(x == 580)
+        {
+            r=13;
+            
+        }
+        
+        return r;
     }
 }

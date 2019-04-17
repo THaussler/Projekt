@@ -23,6 +23,7 @@ public class Richtungsanzeige extends Actor
         if(Greenfoot.isKeyDown("space"))
         {
             i++;
+            gibRichtung();
         }
         // Add your action code here.
     } 
@@ -145,5 +146,13 @@ public class Richtungsanzeige extends Actor
             turn(5);
         }
      
+    }
+    
+    public int gibRichtung()
+    {
+        int g = getRotation();
+        
+        return g;
+
     }
 }

@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+       import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Korb here.
@@ -19,7 +19,7 @@ public class Korb extends Actor
     {
         // Add your action code here.
         
-        bewegen();
+        
     }  
     
     public Korb()
@@ -34,18 +34,46 @@ public class Korb extends Actor
         if(y >= 350)
         {
             turn(180);
-             move(15);
+             move(5);
            
         }
         if ( y > 50 && y < 350)
         {
-             move(15);
+             move(5);
             }
        if(y <= 50)
        {
            turn (180);
-            move(15);
+            move(5);
         }
+    }
+    
+    public boolean getroffen(Ball b)
+    {
+        boolean t;
+        if(intersects(b)==true)
+        {
+            t = true;
+        }
+        else
+        {
+            t = false;
+        }
+        return t;
+    }
+    
+    public boolean berührt(Class Ball)
+    {
+        boolean v;
+        if(isTouching(Ball)==true)
+        {
+            v = true;
+        }
+        else
+        {
+            v = false;
+        }
+        return v;
     }
     
 }
