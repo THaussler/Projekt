@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Abwurfpunkt
+comment0.text=\n\ CatCannon\ is\ a\ purple\ cat\ that\ vomits\ Rainbow\ Hairballs\ \n\ when\ the\ space\ bar\ is\ pressed.\n\ It\ can\ also\ move\ left\ and\ right,\ and\ diagonally\ up\ into\ the\ sky,\ \n\ which\ is\ weird.\n\ \n\ @author\ Gina\ Giommi\n\ @version\ Ver.1\n
+comment1.params=
+comment1.target=Abwurfpunkt()
+comment1.text=\n\ Default\ CatCannon\ for\ placing\ a\ cat\ in\ the\ preset\ location\ in\ the\ world.\n
+comment2.params=locationX\ locationY
+comment2.target=Abwurfpunkt(int,\ int)
+comment2.text=\n\ Create\ a\ CatCannon\ at\ a\ different\ location\ than\ the\ default\ 77,\ 352.\n\ Place\ it\ anywhere\ in\ the\ world\ by\ passing\ integers\ to\ the\ locationX\ and\n\ locationY\ parameters.\n\ @param\:\ Location\ of\ x\ coordinate.\n\ @param\:\ Location\ of\ Y\ coordinate.\n
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\n\ Act\ -\ do\ whatever\ the\ CatCannon\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment4.params=
+comment4.target=void\ changeCatImage()
+comment4.text=\n\ Change\ the\ image\ to\ another\ leaf\ image.\ This\ toggles\ back\ and\n\ forth\ between\ two\ images.\n
+comment5.params=
+comment5.target=void\ vomit()
+numComments=6
