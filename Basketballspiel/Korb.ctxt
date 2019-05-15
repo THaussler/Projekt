@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Korb
+comment0.text=\n\ Write\ a\ description\ of\ class\ LilFrog\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Korb()
+comment2.params=locationX\ locationY
+comment2.target=Korb(int,\ int)
+comment3.params=
+comment3.target=void\ changeImage()
+comment3.text=\n\ Change\ the\ image\ to\ show\ a\ scared\ frog,\ or\ a\ grumpy\ frog.\n\ A\ scared\ frog\ sees\ Hairballs\ in\ the\ air,\ a\ grumpy\ frog\ sees\ no\ Hairballs.\n
+comment4.params=
+comment4.target=void\ act()
+comment4.text=\n\ Act\ -\ do\ whatever\ the\ LilFrog\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+numComments=5
