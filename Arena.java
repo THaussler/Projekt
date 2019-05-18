@@ -20,24 +20,28 @@ public class Arena extends World
 
         
         Korb k1 = new Korb();
-        addObject(k1, 550, 100);
-                
+        addObject(k1, 555, 150);
+        
+        Brett br = new Brett();
+        addObject(br, 600, 90);
       
         
         Spieler s = new Spieler();
         addObject(s, 150, 320);
-        
-              
-        Kraftanzeige kr = new Kraftanzeige();
-        addObject(kr, 550, 350);
+
         
         Richtungsanzeige r = new Richtungsanzeige();
-        addObject(r, 150, 300);
-        
-        Ball b = new Ball(k1);
-        addObject(b, 155, 300);
+        addObject(r, 170, 300);
+    
+        Anzeige a = new Anzeige();
+        addObject(a, 500, 410);
+                
+        Kraftanzeige kr = new Kraftanzeige();
+        addObject(kr, 500, 410);
      
-
+   Ball b = new Ball(k1, r, kr, br);
+        addObject(b, 155, 300);
+        
 
     }
     public void loescheObjekte()

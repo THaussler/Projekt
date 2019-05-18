@@ -22,12 +22,13 @@ public class Kraftanzeige extends Actor
         if(Greenfoot.isKeyDown("b"))
         {
             i++;
-            gibKraft();
+            
         }
-       
+       gibKraft();
     } 
     public Kraftanzeige()
     {
+        
 
     }
     public void Kraftauswahl()
@@ -38,34 +39,124 @@ public class Kraftanzeige extends Actor
        
        
        
-       
-
-    
-        if(x == 520)
+            if(x == 445)
         {
             turn(180);
             move(5);
+             
+       
+        }
+
+            if(x == 450)
+        {
+            
+            move(5);
+             
+       
+        }
+        
+        if(x == 455)
+        {
+            move(5);
+         
+        }
+        
+        if(x == 460)
+        {
+            move(5);
+            
+        }
+       
+        if(x == 465)
+        {
+           
+            move(5);
+            
+        }
+        if(x == 470)
+        {
+            
+            move(5);
       
+        }
+        
+        if(x == 475)
+        {
+            move(5);
+
+        }
+       
+        if(x == 480)
+        {
+            move(5);
+         
+        }
+       
+        if(x == 485)
+        {
+            move(5);
+         
+        }
+       
+        if(x == 490)
+        {
+            move(5);
+         
+        }
+        
+        if(x == 495)
+        {
+            move(5);
+           
+        }
+        if(x == 500)
+        {
+            move(5);
+          
+        }
+        
+        if(x == 505)
+        {
+            move(5);
+           
+        }
+        
+        if(x == 510)
+        {
+            move(5);
+          
+        }
+        
+        if(x == 515)
+        {
+            move(5);
+       
+        }
+        
+        if(x == 520)
+        {
+            move(5);
+         
         }
         
         if(x == 525)
         {
             move(5);
-
+            
         }
        
         if(x == 530)
         {
+            
             move(5);
-         
+            
         }
-       
-        if(x == 535)
+                if(x == 535)
         {
             move(5);
-         
-        }
        
+        }
+        
         if(x == 540)
         {
             move(5);
@@ -75,51 +166,22 @@ public class Kraftanzeige extends Actor
         if(x == 545)
         {
             move(5);
-           
-        }
-        if(x == 550)
-        {
-            move(5);
-          
-        }
-        
-        if(x == 555)
-        {
-            move(5);
-           
-        }
-        
-        if(x == 560)
-        {
-            move(5);
-          
-        }
-        
-        if(x == 565)
-        {
-            move(5);
-       
-        }
-        
-        if(x == 570)
-        {
-            move(5);
-         
-        }
-        
-        if(x == 575)
-        {
-            move(5);
             
         }
        
-        if(x == 580)
+        if(x == 550)
+        {
+            
+            move(5);
+            
+        }
+              if(x == 555)
         {
             turn(180);
             move(5);
-            
+             
+       
         }
-         
     
  
     }
@@ -130,86 +192,152 @@ public class Kraftanzeige extends Actor
         int r = 0;
        
        
+                   if(x == 445)
+        {
+            r = 58;
+             
        
-       
+        }
 
-    
+            if(x == 450)
+        {
+            
+            r = 60;
+             
+       
+        }
+        
+        if(x == 455)
+        {
+            r = 62;
+         
+        }
+        
+        if(x == 460)
+        {
+         r = 64;
+            
+        }
+       
+        if(x == 465)
+        {
+           
+            r = 66;
+            
+        }
+        if(x == 470)
+        {
+            
+            r = 68;
+      
+        }
+        
+        if(x == 475)
+        {
+            r = 70;
+
+        }
+       
+        if(x == 480)
+        {
+            r = 72;
+         
+        }
+       
+        if(x == 485)
+        {
+            r = 74;
+         
+        }
+       
+        if(x == 490)
+        {
+            r = 76;
+         
+        }
+        
+        if(x == 495)
+        {
+            r = 78;
+           
+        }
+        if(x == 500)
+        {
+            r = 80;
+          
+        }
+        
+        if(x == 505)
+        {
+            r = 82;
+           
+        }
+        
+        if(x == 510)
+        {
+            r = 84;
+          
+        }
+        
+        if(x == 515)
+        {
+            r = 86;
+       
+        }
+        
         if(x == 520)
         {
-            r=1;
-      
+            r = 88;
+         
         }
         
         if(x == 525)
         {
-            r=2;
-
+            r = 90;
+            
         }
        
         if(x == 530)
         {
-            r=3;
-         
+            
+            r = 92;
+            
         }
-       
-        if(x == 535)
+                if(x == 535)
         {
-            r=4;
-         
-        }
+            r = 94;
        
+        }
+        
         if(x == 540)
         {
-            r=5;
+            r = 96;
          
         }
         
         if(x == 545)
         {
-            r=6;
-           
+            r = 98;
+            
         }
+       
         if(x == 550)
         {
-            r=7;
-          
-        }
-        
-        if(x == 555)
-        {
-            r=8;
-           
-        }
-        
-        if(x == 560)
-        {
-            r=9;
-          
-        }
-        
-        if(x == 565)
-        {
-            r=10;
-       
-        }
-        
-        if(x == 570)
-        {
-            r=11;
-         
-        }
-        
-        if(x == 575)
-        {
-            r=12;
+            
+            r = 100;
             
         }
-       
-        if(x == 580)
+              if(x == 555)
         {
-            r=13;
-            
+           r= 102;
+             
+       
         }
+    
+       
+
+    
+
         
         return r;
     }
