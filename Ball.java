@@ -109,7 +109,7 @@ if(i == 3)
     turn(5);
     t=t+0.1;
     s=s-0.1;
-    x= 150 + v0*Math.cos(winkel)*s;
+    x= 300 + 0.5*v0*Math.cos(winkel)*s;
     y= 300 - v0*Math.sin(winkel)*t+(g/2)*(t*t);
     
     int x0 = (int) Math.round(x);
