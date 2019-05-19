@@ -1,22 +1,16 @@
 import greenfoot.*;  
 import java.util.List;
 
-/**
- * Write a description of class ProjectilePlanet here.
- * 
- * @author Gina Giommi
- * @version Ver.1
- */
+
 public class Welt extends World
 { 
-
+    private Counter actCounter;
     public static final int GROUND_HEIGHT = 360;
     public static final Vector GRAVITY = new Vector(0.0, 0.2);
 
     public static int ballCounter = 0;
-
-    private GreenfootImage korb1 = new GreenfootImage("lilFrog1.png");
-    private GreenfootImage korb2 = new GreenfootImage("lilFrog2.png");
+    public static int count = 5;
+    
 
     /**
      * Constructor for objects of class ProjectilePlanet.
@@ -26,11 +20,24 @@ public class Welt extends World
     {    
 
         super(600, 400, 1); 
+        
+        actCounter = new Counter("verfuegbare Baelle: ");
+        addObject(actCounter, 120, 40);
         setup();
+        actCounter.setValue(5);
 
         prepare();
+       
     }
 
+    public void act()
+     {
+       if(count> 5){
+         actCounter.setValue(actCounter.getValue() - 1);
+         count --;
+     }
+    }
+    
     public void addBall()
     {
         ballCounter++;
@@ -47,16 +54,10 @@ public class Welt extends World
     {
         List<Korb> koerbe = getObjects(Korb.class);
 
-        for (Korb korb : koerbe)
-        {
-            korb.changeImage();
-        }
+        
         List<Abwurfpunkt> punkte = getObjects(Abwurfpunkt.class);
 
-        for (Abwurfpunkt punkt : punkte)
-        {
-            punkt.changeCatImage();
-        }
+        
     }
 
     /**
@@ -87,13 +88,22 @@ public class Welt extends World
     {
         Abwurfpunkt punkt = new Abwurfpunkt();
         addObject(punkt,77,100);
+        
         Korb korb1 = new Korb();
-        addObject(korb1,350,202);
+        addObject(korb1,280,202);
+        
         punkt.setLocation(70,333);
         Richtungsanzeige richti = new Richtungsanzeige();
         addObject(richti,520,340);
+        
         Richtungspfeil pfeili = new Richtungspfeil();
-        addObject(pfeili,495,340);
+        addObject(pfeili,455,340);
+        
+       
+        
+        
+       
     }
   
-}
+ }
+

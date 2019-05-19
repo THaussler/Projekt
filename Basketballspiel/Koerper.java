@@ -1,12 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Body here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Koerper extends Actor
+
+public class Koerper extends SmoothMover
 {
     int position = 0;
     /**

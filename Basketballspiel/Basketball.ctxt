@@ -1,6 +1,5 @@
 #BlueJ class context
 comment0.target=Basketball
-comment0.text=\n\ Write\ a\ description\ of\ class\ Cannonball\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=Basketball()
 comment2.params=velocity
@@ -11,5 +10,4 @@ comment4.params=
 comment4.target=void\ checkHitTarget()
 comment5.params=
 comment5.target=void\ act()
-comment5.text=\n\ Act\ -\ do\ whatever\ the\ Cannonball\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 numComments=6

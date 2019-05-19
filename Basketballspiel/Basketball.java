@@ -1,11 +1,6 @@
 import greenfoot.*; 
 
-/**
- * Write a description of class Cannonball here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 public class Basketball extends SmoothMover
 {
     public Basketball()
@@ -33,15 +28,11 @@ public class Basketball extends SmoothMover
             world.addObject(new Treffer(), target.getX(), target.getY());
             world.removeObject(target);
             world.removeObject(this);
-            return; // in case of multiple if statementsb 
+            return; 
         }
 
     }
 
-    /**
-     * Act - do whatever the Cannonball wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public void act() 
     {
         addToVelocity(Welt.GRAVITY);
@@ -53,7 +44,7 @@ public class Basketball extends SmoothMover
             planet.removeObject(this);
             planet.subtractBall();
         }
-        else // only if the cannonball is still in the world
+        else 
         {
             checkHitTarget();
         }

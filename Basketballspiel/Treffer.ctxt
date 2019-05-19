@@ -1,12 +1,11 @@
 #BlueJ class context
 comment0.target=Treffer
-comment0.text=\n\ Write\ a\ description\ of\ class\ Splatter\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=Treffer()
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\n\ The\ Rainbow\ Splatter\ disappears\ after\ being\ in\ the\ world\ for\ 10\ act\ cycles.\n
+comment2.text=\n\ The\ stars\ disappear\ after\ being\ in\ the\ world\ for\ 10\ act\ cycles.\n
 comment3.params=
 comment3.target=void\ disappear()
-comment3.text=\n\ Splatters\ becomes\ Transparent.\n
+comment3.text=\n\ Stars\ become\ transparent.\n
 numComments=4

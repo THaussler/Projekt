@@ -1,11 +1,6 @@
 import greenfoot.*; 
 
-/**
- * Write a description of class Splatter here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 public class Treffer extends Actor
 {
     public Treffer()
@@ -14,7 +9,7 @@ public class Treffer extends Actor
     }
 
     /**
-     * The Rainbow Splatter disappears after being in the world for 10 act cycles.
+     * The stars disappear after being in the world for 10 act cycles.
      */
     public void act() 
     {
@@ -22,7 +17,7 @@ public class Treffer extends Actor
     }    
     
     /**
-     * Splatters becomes Transparent.
+     * Stars become transparent.
      */
     public void disappear()
     {
