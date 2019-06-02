@@ -1,5 +1,6 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.List;
 /**
  * Write a description of class Ball here.
  * 
@@ -19,11 +20,19 @@ public class Ball extends Actor
     Kraftanzeige kr1;
     Richtungsanzeige r1;
     Brett br1;
+   int j = Greenfoot.getRandomNumber(6);
     int i = 1;
     int d = 0;
     int e = 0;
     int u = 0;
+    int z = 0;
+    
     double s;
+    double f;
+    double h;
+    int x1;
+    int y1;
+    double t2;
     public void act() 
     {
         // Add your action code here.
@@ -43,16 +52,33 @@ public class Ball extends Actor
             e=1;
            
         }
+
+
    
     
     }  
  
-    public Ball(Korb k1, Richtungsanzeige r, Kraftanzeige kr, Brett br)
+    public Ball(Korb k1, Richtungsanzeige r, Kraftanzeige kr, Brett br, int bx, int by, int z1)
     {
         k = k1;
         kr1=kr;
         r1=r;
         br1= br;
+        x1 = bx;
+        y1 = by;
+       
+        z = z1;
+    
+  
+    
+         if(j==3||j==4)
+    {
+        setImage("Ball 1.3 - Kopie.png");
+    }
+    if(j==5)
+    {
+        setImage("Ball 1.3 - Kopie (2).png");
+    }
     }
     
     public void bewegen()
@@ -62,7 +88,33 @@ public class Ball extends Actor
 
     double winkel = r1.gibRichtung() * (6.283185307/360);
     
-    int g=10;
+    int g= 10;
+    
+    if(z==0)
+    {
+        g = 10;
+    }
+      if(z==1)
+    {
+        g = 14;
+    }
+      if(z==2)
+    {
+        g = 5;
+    }
+      if(z==3)
+    {
+        g = 7;
+      
+    }
+      if(z==4)
+    {
+        g = 10;
+    }
+      if(z==5)
+    {
+        g = 10;
+    }
     if(treffer()==true)
     {
         u++;
@@ -75,6 +127,7 @@ public class Ball extends Actor
      if( berührtBrett() == true)
     {i=3;}
     
+    
     if( i== 1)
     {
         
@@ -83,40 +136,144 @@ public class Ball extends Actor
 
     t=t+0.1;
     
-    x= 155 + v0*Math.cos(winkel)*t;
-    y= 300 - v0*Math.sin(winkel)*t+(g/2)*(t*t);
+    x= x1 + v0*Math.cos(winkel)*t;
+    y= y1 - v0*Math.sin(winkel)*t+(g/2)*(t*t);
     
+ 
+    if(y< -18)
+    {
+       setImage("inf ball.png");
+          if(z==2)
+    {
+        setImage("inf ball - Kopie (2).png");
+    }   if(z==3)
+    {
+        setImage("inf ball - Kopie.png");
+    }
+       if(z==1)
+    {
+        setImage("inf ball - Kopie (3).png");
+    }
+    }
+
+    else{
+     setImage("Ball 1.3.png");
+            if(j==3||j==4)
+    {
+        setImage("Ball 1.3 - Kopie.png");
+    }
+    if(j==5)
+    {
+        setImage("Ball 1.3 - Kopie (2).png");
+    }
     int x0 = (int) Math.round(x);
     int y0 = (int) Math.round(y);
+    
     setLocation(x0,y0);
-    s=t; 
+    if(berührtBoden()==true)
+    {
+     x0 = (int) Math.round(x);
+     y0 = 325;
+    
+    setLocation(x0,y0);
+    }
+
+}
+        if(x < -18 || x > 618)
+    {
+         setImage("inf ball.png");
+          if(z==2)
+    {
+        setImage("inf ball - Kopie (2).png");
+    }   if(z==3)
+    {
+        setImage("inf ball - Kopie.png");
+    }
+       if(z==1)
+    {
+        setImage("inf ball - Kopie (3).png");
+    }
+   
+    Greenfoot.setWorld(new Arena());
+    }
+    s=t;
+    
+     f = x1 + (x - x1)/2;
+     h = y1 - (y - y1)/2;
+     t2 =t;
 }
 if(i == 2)
 {
-    turn(5);
+    turn(-5);
     t=t+0.1;
     s=s-0.1;
-    x= 300 + 0.5*v0*Math.cos(winkel)*s;
-    y= 300 - v0*Math.sin(winkel)*t+(g/2)*(t*t);
+    x= f + 0.5*v0*Math.cos(winkel)*s;
+    y= y1 - v0*Math.sin(winkel)*t+(g/2)*(t*t);
     
     int x0 = (int) Math.round(x);
     int y0 = (int) Math.round(y);
     setLocation(x0,y0);
-
+      if(berührtBoden()==true)
+    {
+     x0 = (int) Math.round(x);
+     y0 = 325;
+    
+    setLocation(x0,y0);
+    }
+      if(x < -18 || x > 618)
+    {
+         setImage("inf ball.png");
+          if(z==2)
+    {
+        setImage("inf ball - Kopie (2).png");
+    }   if(z==3)
+    {
+        setImage("inf ball - Kopie.png");
+    }
+       if(z==1)
+    {
+        setImage("inf ball - Kopie (3).png");
+    }
+    Greenfoot.setWorld(new Arena());
+    }
+t2 =s;
 }
 if(i == 3)
 {
-    turn(5);
+    turn(-5);
     t=t+0.1;
     s=s-0.1;
-    x= 300 + 0.5*v0*Math.cos(winkel)*s;
-    y= 300 - v0*Math.sin(winkel)*t+(g/2)*(t*t);
+    x= f + 0.5*v0*Math.cos(winkel)*s;
+    y= y1 - v0*Math.sin(winkel)*t+(g/2)*(t*t);
     
     int x0 = (int) Math.round(x);
     int y0 = (int) Math.round(y);
     setLocation(x0,y0);
-
+      if(berührtBoden()==true)
+    {
+     x0 = (int) Math.round(x);
+     y0 = 325;
+    
+    setLocation(x0,y0);
+    }
+      if(x < -18 || x > 618)
+    {    setImage("inf ball.png");
+          if(z==2)
+    {
+        setImage("inf ball - Kopie (2).png");
+    }   if(z==3)
+    {
+        setImage("inf ball - Kopie.png");
+    }
+       if(z==1)
+    {
+        setImage("inf ball - Kopie (3).png");
+    }
+    Greenfoot.setWorld(new Arena());
+    }
+t2 =s;
 }
+
 }
 
 else{
@@ -126,8 +283,27 @@ else{
       int x0 = (int) Math.round(x);
     int y0 = (int) Math.round(y);
     setLocation(x0,y0);
-    turn(5);
+   
+     if(berührtBoden()==true)
+    {
+       
+     x0 = (int) Math.round(x);
+     y0 = 325;
+    
+    setLocation(x0,y0);
+    Greenfoot.delay(100);
+    Greenfoot.setWorld(new Arena());
+  
+
+
+    }
+    else{
+        turn(5);
+    }
+  
 }
+
+getWorld().removeObject(r1);
     }
     public boolean berührtKorb()
     {
@@ -141,12 +317,22 @@ else{
         boolean c = intersects(br1);
         return c;
     }
+    public boolean berührtBoden()
+    {
+        int y = getY();
+        boolean c=false;
+        if(y>= 324)
+        {
+            c = true;
+        }
+        return c;
+    }
     public boolean treffer()
     {
         int x = getX();
         int y = getY();
         boolean f;
-        if(540 < x && x < 570 && y < 150 && y > 60)
+        if(k.getX() - (getImage().getHeight()/3.5) < x && x < k.getX() + (getImage().getHeight()/3.5) && y < k.getY() && y > k.getY()-90)
         {
             f = true;
         }
@@ -156,4 +342,5 @@ else{
         }
         return f;
     }
+   
 }
