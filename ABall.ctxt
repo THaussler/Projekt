@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=ABall
+comment0.text=\r\n\r\n\ Write\ a\ description\ of\ class\ Ball\ here.\r\n\r\n\ \r\n\r\n\ @author\ (your\ name)\ \r\n\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=k1\ r\ kr\ br\ bx\ by\ z1
+comment2.target=ABall(AKorb,\ ARichtungsanzeige,\ AKraftanzeige,\ ABrett,\ int,\ int,\ int)
+comment3.params=
+comment3.target=void\ bewegen()
+comment4.params=
+comment4.target=boolean\ ber\u00FChrtKorb()
+comment5.params=
+comment5.target=boolean\ ber\u00FChrtBrett()
+comment6.params=
+comment6.target=boolean\ ber\u00FChrtBoden()
+comment7.params=
+comment7.target=boolean\ treffer()
+numComments=8

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Startbildschirm
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Startbildschirm\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Startbildschirm()
+comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Startscreen\r\n\ \r\n
+comment2.params=
+comment2.target=void\ act()
+numComments=3

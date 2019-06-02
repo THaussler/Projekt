@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=BAbwurfpunkt
+comment1.params=
+comment1.target=BAbwurfpunkt()
+comment2.params=locationX\ locationY
+comment2.target=BAbwurfpunkt(int,\ int)
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ werfen()
+numComments=5
