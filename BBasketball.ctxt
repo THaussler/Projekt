@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=BBasketball
+comment1.params=
+comment1.target=BBasketball()
+comment2.params=velocity
+comment2.target=BBasketball(BVector)
+comment3.params=world
+comment3.target=void\ addedToWorld(greenfoot.World)
+comment4.params=
+comment4.target=void\ checkHitTarget()
+comment5.params=
+comment5.target=void\ act()
+numComments=6
